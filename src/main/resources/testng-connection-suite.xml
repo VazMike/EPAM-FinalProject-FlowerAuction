@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main suite">
+    <test name="Main test">
+        <groups>
+            <run>
+                <include name="connection-config"/>
+                <include name="connection-pool"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.viazovski.flowerauction.connection"/>
+        </packages>
+    </test>
+</suite>

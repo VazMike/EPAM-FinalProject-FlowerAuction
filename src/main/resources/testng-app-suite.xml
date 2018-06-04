@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main suite">
+    <test name="Main test">
+        <groups>
+            <run>
+                <include name="mapping-util"/>
+                <include name="repository"/>
+                <include name="service"/>
+                <include name="validation"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.viazovski.flowerauction.controller"/>
+            <package name="com.viazovski.flowerauction.repository"/>
+            <package name="com.viazovski.flowerauction.service"/>
+        </packages>
+    </test>
+</suite>
